@@ -1,6 +1,7 @@
-package aoc.day04.day02;
+package aoc.day05;
 
-import static java.util.stream.Collectors.toList;
+import aoc.day05.Day05;
+import org.junit.jupiter.api.Test;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,11 +9,9 @@ import java.io.InputStreamReader;
 import java.io.UncheckedIOException;
 import java.util.List;
 
-import org.junit.jupiter.api.Test;
-import aoc.day01.Day01;
-import aoc.day04.Day04;
+import static java.util.stream.Collectors.toList;
 
-public class Day04Test {
+public class Day05Test {
 
     private static List<String> loadInput(int day){
         String paddedDay = String.valueOf(day);
@@ -33,10 +32,10 @@ public class Day04Test {
     @Test
     public void testPart1(){
         // Given
-        List<String> input = loadInput(4);
+        List<String> input = loadInput(5);
 
         // When
-        String result = new Day04().part1(input);
+        String result = new Day05().part1(input);
 
         System.out.println(result);
         // Then
@@ -45,10 +44,10 @@ public class Day04Test {
     @Test
     public void testPart2(){
         // Given
-        List<String> input = loadInput(4);
+        List<String> input = loadInput(5);
 
         // When
-        String result = new Day04().part2(input);
+        String result = new Day05().part2(input);
 
         System.out.println(result);
     }
